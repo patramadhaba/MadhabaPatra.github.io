@@ -288,11 +288,10 @@
 	<script src="js/main.js"></script>	
 	<!-- PRELOADER  JS -->	
 		<script>
-	  $(window).load(function() {
-    
-          $(".loader").fadeOut("slow");
-            });
-		</script>
+	  $(document).ready(function() {
+    $('.loader').fadeOut(1000);  /*FadeOut after page loaded*/
+    console.log("document loaded!");
+});
 	</body>
 	
 </html>

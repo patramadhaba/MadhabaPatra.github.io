@@ -285,12 +285,10 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>	
 	<!-- PRELOADER  JS -->	
-	  <script >	
-          var preloader=document.getElementById('loader');
-           function myfunction(){
-           preloader.style.display='none';
-           }
-          </script>
+	  $(window).load(function() {
+    // page is fully loaded, including all frames, objects and images
+          $(".loader").fadeOut("slow");
+            });
 	</body>
 	
 </html>
